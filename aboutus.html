@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(istockphoto-1447397756-170667a.webp);
+  background-size: cover;
+}      
+.about-section {
+  padding: 50px;
+  text-align: center;
+  /* background-color: #474e5d; */
+  color: white;
+}
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+h2{
+  color:white;
+  font-family:cursive;
+}
+.section
+{
+ background-image: url(IMG-20231009-WA0004.jpg);
+ position: static;
+ font-family: sans-serif;
+ padding: 50px;
+}
+h1
+{
+  position: relative;
+  font-size: 2vw;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+h1::before
+{
+  content:attr(data-text);
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #04AA6D; 
+  overflow: hidden;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width:0;
+  }
+  70%,90%
+  {
+    width:100%
+  }
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+p{
+  color: black;
+}
+    </style>
+</head>
+<body class="aboutus">
+  <div class="about-section">
+    <div class="section" align="center">
+        <h1 style="color: black">About Us Page</h1>
+        <p>We are the Team of "The Finance Manager" and the people behind this amazing project</p>
+        <p>The project is made with the contribution of our team and this is the Result</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="WhatsApp Image 2023-10-10 at 00.01.28_2a703688.jpg" alt="Tanish Setia" style="width:100%" height="450px">
+            <div class="container">
+              <h2>Tanish Setia</h2>
+              <p class="title" style="color:white;">CEO & Founder</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="WhatsApp Image 2023-10-10 at 00.01.28_efe5e45f.jpg" alt="Tamanna" style="width:100%" height="450px">
+            <div class="container">
+              <h2>Tamanna</h2>
+              <p class="title" style="color:white;">Art Director</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="WhatsApp Image 2023-10-10 at 00.02.13_6b0c9b57.jpg" alt="Swapnil" style="width:100%" height="450px">
+            <div class="container">
+              <h2>Swapnil</h2>
+              <p class="title" style="color:white;">Designer</p>
+              
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

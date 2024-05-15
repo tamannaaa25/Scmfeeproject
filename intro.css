@@ -1,0 +1,51 @@
+body
+{
+    font-family: sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(istockphoto-1447397756-170667a.webp);
+    background-size: cover;
+}
+.main
+{
+    font-display: center;
+    font-size: xx-large;   
+}
+h1
+{
+  position: relative;
+  font-size: 2vw;
+  color:#009688;
+  text-transform: uppercase;
+}
+h1::before
+{
+  content:attr(data-text);
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #009688; 
+  overflow: hidden;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width:0;
+  }
+  70%,90%
+  {
+    width:100%
+  }
+}
+.cursive{
+  font-family: cursive;
+}
+h2{
+  color:#009688;
+  font-family:cursive;
+}
+p{
+    color: white;
+}
