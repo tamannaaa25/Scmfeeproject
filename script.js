@@ -21,6 +21,11 @@ function calculateEMI(){
         }else{
             noOfMonths=loanDuration.value;
         }
+
+
+////// this is the commit in newfeature branch
+
+
         let r = parseFloat(interestRate.value)/12/100;
         let P = loanAmount.value;
         let n = noOfMonths;
